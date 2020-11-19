@@ -17,7 +17,7 @@
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROGRAM.TMS320F28379D.ccxml.Texas Instruments XDS100v2 USB Debug Probe/C28xx_CPU1" value="${build_artifact:LAUNCHXL-F28379D-TORQUE}"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROJECT.TMS320F28379D.ccxml.Texas Instruments XDS100v2 USB Debug Probe/C28xx_CPU1" value="LAUNCHXL-F28379D-TORQUE"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_TARGET_CONFIG" value="${target_config_active_default:LAUNCHXL-F28379D-TORQUE}"/>
-<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TMS320F28379D.ccxml.Texas Instruments XDS100v2 USB Debug Probe/C28xx_CPU1" value="C:/Users\Worker\Documents\GitHub\LAUNCHXL-F28379D-TORQUE\Debug\LAUNCHXL-F28379D-TORQUE.out"/>
+<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TMS320F28379D.ccxml.Texas Instruments XDS100v2 USB Debug Probe/C28xx_CPU1" value="C:/Users\n10074694\LAUNCHXL-F28379D-TORQUE\Debug\LAUNCHXL-F28379D-TORQUE.out"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/LAUNCHXL-F28379D-TORQUE"/>
 </listAttribute>
