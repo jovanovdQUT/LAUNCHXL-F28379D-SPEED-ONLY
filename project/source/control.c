@@ -31,7 +31,7 @@ iPARK_F ipv;
 SMOPOS_F smopos;
 SPEED_ESTIMATION_F speedest;
 
-PID_GRANDO_F_CONTROLLER speedPID, idPID, iqPID;
+PID_GRANDO_F_CONTROLLER torquePID, idPID, iqPID;
 PID pidD, pidQ, pidS;
 
 motor_params_t motor_params = {0};
@@ -92,11 +92,11 @@ void InitControl(void) {
     se_init(&speedest, BaseRpm, DELTA_T, fb, fc);
 
     // PID initialization
-    PID_GRANDO_F_init(&speedPID);
-    speedPID.param.Kp = 0.075;
-    speedPID.param.Ki = 1e-6; // 0.0 * 0.1;
-    speedPID.param.Umax =  IDC_MAX;
-    speedPID.param.Umin = -IDC_MAX;
+    PID_GRANDO_F_init(&torquePID);
+    torquePID.param.Kp = 0.075;
+    torquePID.param.Ki = 1e-6; // 0.0 * 0.1;
+    torquePID.param.Umax =  IDC_MAX;
+    torquePID.param.Umin = -IDC_MAX;
 
 
     PID_GRANDO_F_init(&idPID);

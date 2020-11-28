@@ -30,7 +30,7 @@ extern PARK_F pv, pi;
 extern iPARK_F ipv;
 extern SMOPOS_F smopos;
 extern SPEED_ESTIMATION_F speedest;
-extern PID_GRANDO_F_CONTROLLER speedPID, idPID, iqPID;
+extern PID_GRANDO_F_CONTROLLER torquePID, idPID, iqPID;
 extern Uint32 state_change_5sec, vdc_ctrl_cnt;
 extern float wRefRPM;
 extern PID pidD, pidQ, pidS;
@@ -521,7 +521,8 @@ interrupt void adc_isr() {
         // Calibration
         case CALIBRA:
 
-            control_state_info = SYNCHRO;
+            // Go directly to torque control
+            control_state_info = RUN; // SYNCHRO;
 
         break;
 
@@ -623,43 +624,16 @@ interrupt void adc_isr() {
 
             if (state_change_5sec == 0) {
 
-                speedPID.term.Ref = wRefRPM;
-                speedPID.term.Fbk = smo_a.wo_k;
+                torquePID.term.Ref = 0.0; // wRefRPM;
+                torquePID.term.Fbk = torque_est; // smo_a.wo_k;
 
-                speedPID.param.Kp = KpoS;
-                speedPID.param.Ki = KioS * DELTA_T;
+                torquePID.param.Kp = KpoS;
+                torquePID.param.Ki = KioS * DELTA_T;
 
-                PID_GRANDO_F_FUNC(&speedPID);
+                PID_GRANDO_F_FUNC(&torquePID);
 
             }
 
-
-//            cnt_q_ref = cnt_q_ref + DELTA_T;
-//
-//            if (cnt_q_ref < 5.0) {
-//
-//                speedPID.term.Out = 0.0;
-//
-//            }
-//
-//            if ((cnt_q_ref >= 5.0) && (cnt_q_ref <= 8.00)) {
-//
-//                speedPID.term.Out = IQ_REF;
-//
-//            }
-//
-//            if ((cnt_q_ref > 8.00) && (cnt_q_ref <= 10.00)) {
-//
-//                speedPID.term.Out = 0.0;
-//
-//            }
-//
-//            if (cnt_q_ref > 10.00) {
-//
-//                cnt_q_ref = 0.0;
-//
-//                speedPID.term.Out = 0.0;
-//            }
 
 
             // Current control
@@ -671,7 +645,7 @@ interrupt void adc_isr() {
             idPID.param.Ki = KioD * DELTA_T; // idPID.param.Kp * Kio;
             PID_GRANDO_F_FUNC(&idPID);
 
-            iqPID.term.Ref = speedPID.term.Out; //IQ_REF; //
+            iqPID.term.Ref = torquePID.term.Out; //IQ_REF; //
             iqPID.term.Fbk = pi.q;
             iqPID.param.Umax = adc_read.vdc; // VDC_MAX;
             iqPID.param.Umin = -adc_read.vdc; // -VDC_MAX;
