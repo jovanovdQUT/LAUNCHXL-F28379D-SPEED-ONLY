@@ -55,6 +55,7 @@ float KpoQ = 5.0/*0.03*/, KioQ = 0.1/*0.01*/;
 
 float KpoS = 0.18, KioS = 0.003;
 float cnt_q_ref = 0.0;
+float torque_ref = 0.0;
 
 float a0 = 0.0, a2 = 0.0, a3 = 0.0, b2 = 0.0, b3 = 0.0, c2 = 0.0, c3 = 0.0;
 
@@ -624,7 +625,7 @@ interrupt void adc_isr() {
 
             if (state_change_5sec == 0) {
 
-                torquePID.term.Ref = 0.0; // wRefRPM;
+                torquePID.term.Ref = torque_ref; // wRefRPM;
                 torquePID.term.Fbk = torque_est; // smo_a.wo_k;
 
                 torquePID.param.Kp = KpoS;
