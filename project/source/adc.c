@@ -53,9 +53,9 @@ float IQ_REF = 0.5;
 
 // Old values
 
-float KpoD = 10.0,   KioD = 4.0;
-float KpoQ = 10.0,   KioQ = 4.0;
-float KpoS = 0.005, KioS = 5.0;
+float KpoD = 5.0,   KioD = 4.0;
+float KpoQ = 5.0,   KioQ = 4.0;
+float KpoS = 0.001, KioS = 1.25;
 
 //float KpoD = 5.0, KioD = 0.1;
 //float KpoQ = 5.0, KioQ = 0.1;
@@ -532,7 +532,7 @@ interrupt void adc_isr() {
     x_neg = __sqrt(xa_neg*xa_neg + xb_neg*xb_neg);
 
     // Determine the speed sign
-    signSpeed = x_pos < x_neg ? 1.0 : -1.0;
+    signSpeed = x_pos > x_neg ? 1.0 : -1.0;
 
 
     pv.sin = __sin(tempAngleE);
@@ -699,7 +699,7 @@ interrupt void adc_isr() {
 
 #if 1
                 ramp_k = 0.99 * ramp_k_1 + 0.01 * wRefRPM;
-                torquePID.term.Ref =  ramp_k;
+                torquePID.term.Ref =  wRefRPM; //ramp_k;
                 ramp_k_1 = ramp_k;
 
                 torquePID.term.Fbk = smo_a.wo_k;
