@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
 	<storageModule configRelations="2" moduleId="org.eclipse.cdt.core.settings">
-		<cconfiguration id="com.ti.ccstudio.buildDefinitions.C2000.Debug.185978111">
-			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.185978111" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+		<cconfiguration id="com.ti.ccstudio.buildDefinitions.C2000.Debug.1674604682">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.1674604682" moduleId="org.eclipse.cdt.core.settings" name="Debug">
 				<externalSettings/>
 				<extensions>
 					<extension id="com.ti.ccstudio.binaryparser.CoffParser" point="org.eclipse.cdt.core.BinaryParser"/>
@@ -13,11 +13,11 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="out" artifactName="${ProjName}" buildProperties="" cleanCommand="${CG_CLEAN_CMD}" description="" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.185978111" name="Debug" parent="com.ti.ccstudio.buildDefinitions.C2000.Debug">
-					<folderInfo id="com.ti.ccstudio.buildDefinitions.C2000.Debug.185978111." name="/" resourcePath="">
-						<toolChain id="com.ti.ccstudio.buildDefinitions.C2000_20.8.exe.DebugToolchain.1843436809" name="TI Build Tools" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C2000_20.8.exe.linkerDebug.1651216480">
-							<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1604045977" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
-								<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=TMS320C28XX.TMS320F28379D"/>
+				<configuration artifactExtension="out" artifactName="${ProjName}" buildProperties="" cleanCommand="${CG_CLEAN_CMD}" description="" id="com.ti.ccstudio.buildDefinitions.C2000.Debug.1674604682" name="Debug" parent="com.ti.ccstudio.buildDefinitions.C2000.Debug">
+					<folderInfo id="com.ti.ccstudio.buildDefinitions.C2000.Debug.1674604682." name="/" resourcePath="">
+						<toolChain id="com.ti.ccstudio.buildDefinitions.C2000_20.12.exe.DebugToolchain.2087680217" name="TI Build Tools" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C2000_20.12.exe.linkerDebug.312159378">
+							<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.167175734" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+								<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=TMS320C28XX.TMS320F28375D"/>
 								<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
 								<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
 								<listOptionValue builtIn="false" value="CCS_MBS_VERSION=6.1.3"/>
@@ -25,24 +25,24 @@
 								<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=libc.a"/>
 								<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable"/>
 							</option>
-							<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1544708653" name="Compiler version" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="20.8.0.STS" valueType="string"/>
-							<targetPlatform id="com.ti.ccstudio.buildDefinitions.C2000_20.8.exe.targetPlatformDebug.1077698616" name="Platform" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.exe.targetPlatformDebug"/>
-							<builder buildPath="${BuildDirectory}" id="com.ti.ccstudio.buildDefinitions.C2000_20.8.exe.builderDebug.1734797612" keepEnvironmentInBuildfile="false" name="GNU Make" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.exe.builderDebug"/>
-							<tool id="com.ti.ccstudio.buildDefinitions.C2000_20.8.exe.compilerDebug.1284922053" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.exe.compilerDebug">
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.LARGE_MEMORY_MODEL.1451712414" name="Option deprecated, set by default (--large_memory_model, -ml)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.LARGE_MEMORY_MODEL" useByScannerDiscovery="false" value="true" valueType="boolean"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.UNIFIED_MEMORY.2060298333" name="Unified memory (--unified_memory, -mt)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.UNIFIED_MEMORY" useByScannerDiscovery="false" value="true" valueType="boolean"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.SILICON_VERSION.1231932853" name="Processor version (--silicon_version, -v)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.SILICON_VERSION" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.SILICON_VERSION.28" valueType="enumerated"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.FLOAT_SUPPORT.2730642" name="Specify floating point support (--float_support)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.FLOAT_SUPPORT" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.FLOAT_SUPPORT.fpu32" valueType="enumerated"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.CLA_SUPPORT.1811191281" name="Specify CLA support (--cla_support)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.CLA_SUPPORT" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.CLA_SUPPORT.cla1" valueType="enumerated"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.VCU_SUPPORT.1820671577" name="Specify VCU support (--vcu_support)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.VCU_SUPPORT" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.VCU_SUPPORT.vcu2" valueType="enumerated"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.TMU_SUPPORT.514765619" name="Specify TMU support (--tmu_support)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.TMU_SUPPORT" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.TMU_SUPPORT.tmu0" valueType="enumerated"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.DEBUGGING_MODEL.717365375" name="Debugging model" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.DEBUGGING_MODEL" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.DEBUGGING_MODEL.SYMDEBUG__DWARF" valueType="enumerated"/>
-								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.DIAG_WARNING.1643454327" name="Treat diagnostic &lt;id&gt; as warning (--diag_warning, -pdsw)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.DIAG_WARNING" useByScannerDiscovery="false" valueType="stringList">
+							<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1833973890" name="Compiler version" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="20.12.0.STS" valueType="string"/>
+							<targetPlatform id="com.ti.ccstudio.buildDefinitions.C2000_20.12.exe.targetPlatformDebug.675323491" name="Platform" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.exe.targetPlatformDebug"/>
+							<builder buildPath="${BuildDirectory}" id="com.ti.ccstudio.buildDefinitions.C2000_20.12.exe.builderDebug.1249619622" keepEnvironmentInBuildfile="false" name="GNU Make" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.exe.builderDebug"/>
+							<tool id="com.ti.ccstudio.buildDefinitions.C2000_20.12.exe.compilerDebug.922332410" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.exe.compilerDebug">
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.LARGE_MEMORY_MODEL.1258475459" name="Option deprecated, set by default (--large_memory_model, -ml)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.LARGE_MEMORY_MODEL" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.UNIFIED_MEMORY.1586623660" name="Unified memory (--unified_memory, -mt)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.UNIFIED_MEMORY" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.SILICON_VERSION.829131403" name="Processor version (--silicon_version, -v)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.SILICON_VERSION" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.SILICON_VERSION.28" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.FLOAT_SUPPORT.1379846070" name="Specify floating point support (--float_support)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.FLOAT_SUPPORT" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.FLOAT_SUPPORT.fpu32" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.CLA_SUPPORT.2112177243" name="Specify CLA support (--cla_support)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.CLA_SUPPORT" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.CLA_SUPPORT.cla1" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.VCU_SUPPORT.1755458111" name="Specify VCU support (--vcu_support)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.VCU_SUPPORT" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.VCU_SUPPORT.vcu2" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.TMU_SUPPORT.1466082961" name="Specify TMU support (--tmu_support)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.TMU_SUPPORT" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.TMU_SUPPORT.tmu0" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.DEBUGGING_MODEL.429505909" name="Debugging model" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.DEBUGGING_MODEL" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.DEBUGGING_MODEL.SYMDEBUG__DWARF" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.DIAG_WARNING.1311986859" name="Treat diagnostic &lt;id&gt; as warning (--diag_warning, -pdsw)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.DIAG_WARNING" useByScannerDiscovery="false" valueType="stringList">
 									<listOptionValue builtIn="false" value="225"/>
 								</option>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.DISPLAY_ERROR_NUMBER.415532929" name="Emit diagnostic identifier numbers (--display_error_number, -pden)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.DISPLAY_ERROR_NUMBER" useByScannerDiscovery="false" value="true" valueType="boolean"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.DIAG_WRAP.234809730" name="Wrap diagnostic messages (--diag_wrap)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.DIAG_WRAP" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.DIAG_WRAP.off" valueType="enumerated"/>
-								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.INCLUDE_PATH.795066704" name="Add dir to #include search path (--include_path, -I)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.INCLUDE_PATH" valueType="includePath">
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.DISPLAY_ERROR_NUMBER.1577197702" name="Emit diagnostic identifier numbers (--display_error_number, -pden)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.DISPLAY_ERROR_NUMBER" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.DIAG_WRAP.1312658652" name="Wrap diagnostic messages (--diag_wrap)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.DIAG_WRAP" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.DIAG_WRAP.off" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.INCLUDE_PATH.1859789048" name="Add dir to #include search path (--include_path, -I)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.INCLUDE_PATH" valueType="includePath">
 									<listOptionValue builtIn="false" value="${PROJECT_ROOT}/common/include/"/>
 									<listOptionValue builtIn="false" value="${PROJECT_ROOT}/headers/include/"/>
 									<listOptionValue builtIn="false" value="${PROJECT_ROOT}/project/headers/"/>
@@ -54,27 +54,26 @@
 									<listOptionValue builtIn="false" value="${PROJECT_ROOT}/motor/include/"/>
 									<listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/include/"/>
 								</option>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.ABI.1648487196" name="Application binary interface [See 'General' page to edit] (--abi)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.ABI" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.ABI.coffabi" valueType="enumerated"/>
-								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.DEFINE.534742109" name="Pre-define NAME (--define, -D)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.DEFINE" valueType="definedSymbols">
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.ABI.101428180" name="Application binary interface [See 'General' page to edit] (--abi)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.ABI" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.ABI.coffabi" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.FP_MODE.469528870" name="Floating Point mode (--fp_mode)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.FP_MODE" value="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.FP_MODE.relaxed" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.DEFINE.366609287" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.DEFINE" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="CPU1"/>
 									<listOptionValue builtIn="false" value="_LAUNCHXL_F28379D"/>
 									<listOptionValue builtIn="false" value="_FLASH"/>
 								</option>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.FP_REASSOC.710846187" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.FP_REASSOC" value="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.FP_REASSOC.on" valueType="enumerated"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.FP_MODE.101304186" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.FP_MODE" value="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.FP_MODE.relaxed" valueType="enumerated"/>
-								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compiler.inputType__C_SRCS.1805051395" name="C Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compiler.inputType__C_SRCS"/>
-								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compiler.inputType__CPP_SRCS.1038892284" name="C++ Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compiler.inputType__CPP_SRCS"/>
-								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compiler.inputType__ASM_SRCS.1369937086" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compiler.inputType__ASM_SRCS"/>
-								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compiler.inputType__ASM2_SRCS.1123673774" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compiler.inputType__ASM2_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compiler.inputType__C_SRCS.1688989749" name="C Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compiler.inputType__C_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compiler.inputType__CPP_SRCS.1735959843" name="C++ Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compiler.inputType__CPP_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compiler.inputType__ASM_SRCS.473776545" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compiler.inputType__ASM_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compiler.inputType__ASM2_SRCS.1596486546" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compiler.inputType__ASM2_SRCS"/>
 							</tool>
-							<tool id="com.ti.ccstudio.buildDefinitions.C2000_20.8.exe.linkerDebug.1651216480" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.exe.linkerDebug">
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.STACK_SIZE.179525416" name="Set C system stack size (--stack_size, -stack)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.STACK_SIZE" useByScannerDiscovery="false" value="0x200" valueType="string"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.OUTPUT_FILE.855062003" name="Specify output file name (--output_file, -o)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.OUTPUT_FILE" useByScannerDiscovery="false" value="${ProjName}.out" valueType="string"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.MAP_FILE.1792571899" name="Link information (map) listed into &lt;file&gt; (--map_file, -m)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.MAP_FILE" useByScannerDiscovery="false" value="${ProjName}.map" valueType="string"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.XML_LINK_INFO.1560194647" name="Detailed link information data-base into &lt;file&gt; (--xml_link_info, -xml_link_info)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.XML_LINK_INFO" useByScannerDiscovery="false" value="${ProjName}_linkInfo.xml" valueType="string"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.DISPLAY_ERROR_NUMBER.222732262" name="Emit diagnostic identifier numbers (--display_error_number)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.DISPLAY_ERROR_NUMBER" useByScannerDiscovery="false" value="true" valueType="boolean"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.DIAG_WRAP.1945318087" name="Wrap diagnostic messages (--diag_wrap)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.DIAG_WRAP" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.DIAG_WRAP.off" valueType="enumerated"/>
-								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.SEARCH_PATH.137812327" name="Add &lt;dir&gt; to library search path (--search_path, -i)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.SEARCH_PATH" valueType="libPaths">
+							<tool id="com.ti.ccstudio.buildDefinitions.C2000_20.12.exe.linkerDebug.312159378" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.exe.linkerDebug">
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.STACK_SIZE.1796084079" name="Set C system stack size (--stack_size, -stack)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.STACK_SIZE" useByScannerDiscovery="false" value="0x200" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.OUTPUT_FILE.1277582264" name="Specify output file name (--output_file, -o)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.OUTPUT_FILE" useByScannerDiscovery="false" value="${ProjName}.out" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.MAP_FILE.1965948780" name="Link information (map) listed into &lt;file&gt; (--map_file, -m)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.MAP_FILE" useByScannerDiscovery="false" value="${ProjName}.map" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.XML_LINK_INFO.663754342" name="Detailed link information data-base into &lt;file&gt; (--xml_link_info, -xml_link_info)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.XML_LINK_INFO" useByScannerDiscovery="false" value="${ProjName}_linkInfo.xml" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.DISPLAY_ERROR_NUMBER.1689056828" name="Emit diagnostic identifier numbers (--display_error_number)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.DISPLAY_ERROR_NUMBER" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.DIAG_WRAP.1583926205" name="Wrap diagnostic messages (--diag_wrap)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.DIAG_WRAP" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.DIAG_WRAP.off" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.SEARCH_PATH.1241341357" name="Add &lt;dir&gt; to library search path (--search_path, -i)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.SEARCH_PATH" valueType="libPaths">
 									<listOptionValue builtIn="false" value="${PROJECT_ROOT}/common/cmd/"/>
 									<listOptionValue builtIn="false" value="${PROJECT_ROOT}/headers/cmd"/>
 									<listOptionValue builtIn="false" value="${PROJECT_ROOT}/solar/lib/"/>
@@ -83,20 +82,20 @@
 									<listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/lib/"/>
 									<listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/include/"/>
 								</option>
-								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.LIBRARY.562344177" name="Include library file or command file as input (--library, -l)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.LIBRARY" useByScannerDiscovery="false" valueType="libs"/>
-								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.8.exeLinker.inputType__CMD_SRCS.757744508" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.exeLinker.inputType__CMD_SRCS"/>
-								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.8.exeLinker.inputType__CMD2_SRCS.1841662327" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.exeLinker.inputType__CMD2_SRCS"/>
-								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.8.exeLinker.inputType__GEN_CMDS.301679485" name="Generated Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.exeLinker.inputType__GEN_CMDS"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.LIBRARY.1314543456" name="Include library file or command file as input (--library, -l)" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.LIBRARY" useByScannerDiscovery="false" valueType="libs"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.12.exeLinker.inputType__CMD_SRCS.1012508244" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.exeLinker.inputType__CMD_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.12.exeLinker.inputType__CMD2_SRCS.812545001" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.exeLinker.inputType__CMD2_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.12.exeLinker.inputType__GEN_CMDS.697671111" name="Generated Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.exeLinker.inputType__GEN_CMDS"/>
 							</tool>
-							<tool id="com.ti.ccstudio.buildDefinitions.C2000_20.8.hex.31744168" name="C2000 Hex Utility" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.hex"/>
+							<tool id="com.ti.ccstudio.buildDefinitions.C2000_20.12.hex.1373023108" name="C2000 Hex Utility" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.hex"/>
 						</toolChain>
 					</folderInfo>
 				</configuration>
 			</storageModule>
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
 		</cconfiguration>
-		<cconfiguration id="com.ti.ccstudio.buildDefinitions.C2000.Release.1064822242">
-			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.ti.ccstudio.buildDefinitions.C2000.Release.1064822242" moduleId="org.eclipse.cdt.core.settings" name="Release">
+		<cconfiguration id="com.ti.ccstudio.buildDefinitions.C2000.Release.1896431314">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.ti.ccstudio.buildDefinitions.C2000.Release.1896431314" moduleId="org.eclipse.cdt.core.settings" name="Release">
 				<externalSettings/>
 				<extensions>
 					<extension id="com.ti.ccstudio.binaryparser.CoffParser" point="org.eclipse.cdt.core.BinaryParser"/>
@@ -107,11 +106,11 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="out" artifactName="${ProjName}" buildProperties="" cleanCommand="${CG_CLEAN_CMD}" description="" id="com.ti.ccstudio.buildDefinitions.C2000.Release.1064822242" name="Release" parent="com.ti.ccstudio.buildDefinitions.C2000.Release">
-					<folderInfo id="com.ti.ccstudio.buildDefinitions.C2000.Release.1064822242." name="/" resourcePath="">
-						<toolChain id="com.ti.ccstudio.buildDefinitions.C2000_20.8.exe.ReleaseToolchain.235483974" name="TI Build Tools" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.exe.ReleaseToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C2000_20.8.exe.linkerRelease.1987584151">
-							<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.260413116" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
-								<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=TMS320C28XX.TMS320F28379D"/>
+				<configuration artifactExtension="out" artifactName="${ProjName}" buildProperties="" cleanCommand="${CG_CLEAN_CMD}" description="" id="com.ti.ccstudio.buildDefinitions.C2000.Release.1896431314" name="Release" parent="com.ti.ccstudio.buildDefinitions.C2000.Release">
+					<folderInfo id="com.ti.ccstudio.buildDefinitions.C2000.Release.1896431314." name="/" resourcePath="">
+						<toolChain id="com.ti.ccstudio.buildDefinitions.C2000_20.12.exe.ReleaseToolchain.1560423567" name="TI Build Tools" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.exe.ReleaseToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C2000_20.12.exe.linkerRelease.912740618">
+							<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.2019976461" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+								<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=TMS320C28XX.TMS320F28375D"/>
 								<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
 								<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
 								<listOptionValue builtIn="false" value="CCS_MBS_VERSION=6.1.3"/>
@@ -119,51 +118,51 @@
 								<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=libc.a"/>
 								<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable"/>
 							</option>
-							<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.934287363" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="20.8.0.STS" valueType="string"/>
-							<targetPlatform id="com.ti.ccstudio.buildDefinitions.C2000_20.8.exe.targetPlatformRelease.1725497016" name="Platform" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.exe.targetPlatformRelease"/>
-							<builder buildPath="${BuildDirectory}" id="com.ti.ccstudio.buildDefinitions.C2000_20.8.exe.builderRelease.773860714" name="GNU Make.Release" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.exe.builderRelease"/>
-							<tool id="com.ti.ccstudio.buildDefinitions.C2000_20.8.exe.compilerRelease.790462137" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.exe.compilerRelease">
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.LARGE_MEMORY_MODEL.388399674" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.LARGE_MEMORY_MODEL" useByScannerDiscovery="false" value="true" valueType="boolean"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.UNIFIED_MEMORY.2103346446" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.UNIFIED_MEMORY" useByScannerDiscovery="false" value="true" valueType="boolean"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.SILICON_VERSION.1625822253" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.SILICON_VERSION" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.SILICON_VERSION.28" valueType="enumerated"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.FLOAT_SUPPORT.419417335" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.FLOAT_SUPPORT" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.FLOAT_SUPPORT.fpu32" valueType="enumerated"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.CLA_SUPPORT.503661640" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.CLA_SUPPORT" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.CLA_SUPPORT.cla1" valueType="enumerated"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.VCU_SUPPORT.1084745616" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.VCU_SUPPORT" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.VCU_SUPPORT.vcu2" valueType="enumerated"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.TMU_SUPPORT.1744095785" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.TMU_SUPPORT" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.TMU_SUPPORT.tmu0" valueType="enumerated"/>
-								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.DIAG_WARNING.1057857408" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.DIAG_WARNING" useByScannerDiscovery="false" valueType="stringList">
+							<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.757754379" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="20.12.0.STS" valueType="string"/>
+							<targetPlatform id="com.ti.ccstudio.buildDefinitions.C2000_20.12.exe.targetPlatformRelease.756322270" name="Platform" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.exe.targetPlatformRelease"/>
+							<builder buildPath="${BuildDirectory}" id="com.ti.ccstudio.buildDefinitions.C2000_20.12.exe.builderRelease.1831431800" name="GNU Make.Release" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.exe.builderRelease"/>
+							<tool id="com.ti.ccstudio.buildDefinitions.C2000_20.12.exe.compilerRelease.1014687735" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.exe.compilerRelease">
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.LARGE_MEMORY_MODEL.615178468" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.LARGE_MEMORY_MODEL" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.UNIFIED_MEMORY.1244697766" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.UNIFIED_MEMORY" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.SILICON_VERSION.70107715" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.SILICON_VERSION" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.SILICON_VERSION.28" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.FLOAT_SUPPORT.840800379" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.FLOAT_SUPPORT" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.FLOAT_SUPPORT.fpu32" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.CLA_SUPPORT.378214432" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.CLA_SUPPORT" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.CLA_SUPPORT.cla1" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.VCU_SUPPORT.1529955539" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.VCU_SUPPORT" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.VCU_SUPPORT.vcu2" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.TMU_SUPPORT.891851747" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.TMU_SUPPORT" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.TMU_SUPPORT.tmu0" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.DIAG_WARNING.1010604195" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.DIAG_WARNING" useByScannerDiscovery="false" valueType="stringList">
 									<listOptionValue builtIn="false" value="225"/>
 								</option>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.DISPLAY_ERROR_NUMBER.395519119" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.DISPLAY_ERROR_NUMBER" useByScannerDiscovery="false" value="true" valueType="boolean"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.DIAG_WRAP.1368130630" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.DIAG_WRAP" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.DIAG_WRAP.off" valueType="enumerated"/>
-								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.INCLUDE_PATH.469997889" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.INCLUDE_PATH" valueType="includePath">
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.DISPLAY_ERROR_NUMBER.141502484" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.DISPLAY_ERROR_NUMBER" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.DIAG_WRAP.532710036" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.DIAG_WRAP" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.DIAG_WRAP.off" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.INCLUDE_PATH.109945491" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.INCLUDE_PATH" valueType="includePath">
 									<listOptionValue builtIn="false" value="${PROJECT_ROOT}"/>
 									<listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/include"/>
 								</option>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.ABI.1280150735" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.ABI" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.8.compilerID.ABI.coffabi" valueType="enumerated"/>
-								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compiler.inputType__C_SRCS.840295961" name="C Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compiler.inputType__C_SRCS"/>
-								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compiler.inputType__CPP_SRCS.985478793" name="C++ Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compiler.inputType__CPP_SRCS"/>
-								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compiler.inputType__ASM_SRCS.1307055688" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compiler.inputType__ASM_SRCS"/>
-								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.8.compiler.inputType__ASM2_SRCS.1346134993" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.compiler.inputType__ASM2_SRCS"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.ABI.1636006381" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.ABI" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.12.compilerID.ABI.coffabi" valueType="enumerated"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compiler.inputType__C_SRCS.1669804732" name="C Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compiler.inputType__C_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compiler.inputType__CPP_SRCS.855229162" name="C++ Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compiler.inputType__CPP_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compiler.inputType__ASM_SRCS.1262587344" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compiler.inputType__ASM_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.12.compiler.inputType__ASM2_SRCS.834313965" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.compiler.inputType__ASM2_SRCS"/>
 							</tool>
-							<tool id="com.ti.ccstudio.buildDefinitions.C2000_20.8.exe.linkerRelease.1987584151" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.exe.linkerRelease">
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.STACK_SIZE.49837295" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.STACK_SIZE" useByScannerDiscovery="false" value="0x200" valueType="string"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.OUTPUT_FILE.348810262" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.OUTPUT_FILE" useByScannerDiscovery="false" value="${ProjName}.out" valueType="string"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.MAP_FILE.1361394528" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.MAP_FILE" useByScannerDiscovery="false" value="${ProjName}.map" valueType="string"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.XML_LINK_INFO.1891081987" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.XML_LINK_INFO" useByScannerDiscovery="false" value="${ProjName}_linkInfo.xml" valueType="string"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.DISPLAY_ERROR_NUMBER.374801519" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.DISPLAY_ERROR_NUMBER" useByScannerDiscovery="false" value="true" valueType="boolean"/>
-								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.DIAG_WRAP.764290225" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.DIAG_WRAP" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.DIAG_WRAP.off" valueType="enumerated"/>
-								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.SEARCH_PATH.96707594" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.SEARCH_PATH" valueType="libPaths">
+							<tool id="com.ti.ccstudio.buildDefinitions.C2000_20.12.exe.linkerRelease.912740618" name="C2000 Linker" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.exe.linkerRelease">
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.STACK_SIZE.815489491" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.STACK_SIZE" useByScannerDiscovery="false" value="0x200" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.OUTPUT_FILE.282566638" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.OUTPUT_FILE" useByScannerDiscovery="false" value="${ProjName}.out" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.MAP_FILE.1423690435" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.MAP_FILE" useByScannerDiscovery="false" value="${ProjName}.map" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.XML_LINK_INFO.593293415" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.XML_LINK_INFO" useByScannerDiscovery="false" value="${ProjName}_linkInfo.xml" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.DISPLAY_ERROR_NUMBER.421188326" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.DISPLAY_ERROR_NUMBER" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.DIAG_WRAP.2021765225" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.DIAG_WRAP" useByScannerDiscovery="false" value="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.DIAG_WRAP.off" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.SEARCH_PATH.504470647" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.SEARCH_PATH" valueType="libPaths">
 									<listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/lib"/>
 									<listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/include"/>
 								</option>
-								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.LIBRARY.1959593700" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.linkerID.LIBRARY" useByScannerDiscovery="false" valueType="libs">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.LIBRARY.965978033" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.linkerID.LIBRARY" useByScannerDiscovery="false" valueType="libs">
 									<listOptionValue builtIn="false" value="libc.a"/>
 								</option>
-								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.8.exeLinker.inputType__CMD_SRCS.2089952653" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.exeLinker.inputType__CMD_SRCS"/>
-								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.8.exeLinker.inputType__CMD2_SRCS.1711312102" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.exeLinker.inputType__CMD2_SRCS"/>
-								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.8.exeLinker.inputType__GEN_CMDS.1772852085" name="Generated Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.exeLinker.inputType__GEN_CMDS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.12.exeLinker.inputType__CMD_SRCS.1183025283" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.exeLinker.inputType__CMD_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.12.exeLinker.inputType__CMD2_SRCS.527892185" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.exeLinker.inputType__CMD2_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C2000_20.12.exeLinker.inputType__GEN_CMDS.1571282023" name="Generated Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.exeLinker.inputType__GEN_CMDS"/>
 							</tool>
-							<tool id="com.ti.ccstudio.buildDefinitions.C2000_20.8.hex.827445331" name="C2000 Hex Utility" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.8.hex"/>
+							<tool id="com.ti.ccstudio.buildDefinitions.C2000_20.12.hex.260577657" name="C2000 Hex Utility" superClass="com.ti.ccstudio.buildDefinitions.C2000_20.12.hex"/>
 						</toolChain>
 					</folderInfo>
 				</configuration>
@@ -173,7 +172,7 @@
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-		<project id="LAUNCHXL-F28379D-SPEED-ONLY.com.ti.ccstudio.buildDefinitions.C2000.ProjectType.733584780" name="C2000" projectType="com.ti.ccstudio.buildDefinitions.C2000.ProjectType"/>
+		<project id="LAUNCHXL-F28379D-SPEED-ONLY.com.ti.ccstudio.buildDefinitions.C2000.ProjectType.266886878" name="C2000" projectType="com.ti.ccstudio.buildDefinitions.C2000.ProjectType"/>
 	</storageModule>
 	<storageModule moduleId="scannerConfiguration"/>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>

@@ -85,7 +85,9 @@
 #define SYNCHRO_TIME_MAX_SEC    ((1.0) * (ISR_FREQUENCY) * (DELTA_T))
 
 #define STATE_CHNAGE_5SEC   (100000)
-#define VDC_CTRL            (5)
+#define VDC_CTRL            (10)
+
+#define DELTA_VDC_T         ( ((float)(VDC_CTRL))*(DELTA_T))
 
 // ADC settings
 #define VDC_MAX             (35.0)
