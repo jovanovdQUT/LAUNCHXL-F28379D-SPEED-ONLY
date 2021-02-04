@@ -53,9 +53,23 @@ float IQ_REF = 0.5;
 
 // Old values
 
-float KpoD = 5.0,   KioD = 4.0;
-float KpoQ = 5.0,   KioQ = 4.0;
-float KpoS = 0.001, KioS = 1.25;
+float KpoD = 0.540000021,   KioD = 593.0;
+float KpoQ = 0.540000021,   KioQ = 593.0;
+
+// Case 1 - OK
+//float KpoS = 0.013315, KioS = 0.18964;
+
+// Case 2 - Good disturbance rejection
+//float KpoS = 0.04846, KioS = 3.7892;
+
+// Case 3 - Same as Case 2
+//float KpoS = 0.044796, KioS = 2.0262;
+
+// Case 4
+//float KpoS = 0.050556, KioS = 0.07358;
+
+// Case 5
+float KpoS = 0.013315, KioS = 0.18964;
 
 //float KpoD = 5.0, KioD = 0.1;
 //float KpoQ = 5.0, KioQ = 0.1;
@@ -86,6 +100,8 @@ float frotor = 10.0;
 float wrotor = 0;
 float Nrotor = (ISR_FREQUENCY) / (GRID_FREQ);
 float torque_est = 0, torque_est_1 = 0, ft = 1e-3;
+
+float P_dc = 0.0, P_ac = 0.0, Q_ac = 0.0;
 
 Svgen_t svgn = {0};
 
@@ -546,6 +562,13 @@ interrupt void adc_isr() {
     PARK_F_FUNC(&pv);
     PARK_F_FUNC(&pi);
 
+    // Power estimation
+    P_dc = adc_read.vdc * adc_read.idc;
+
+    P_ac = 3.0 * adc_read.vdc * (pv.d * pi.d + pv.q * pi.q); //    1.5 * (vd id + vq iq);
+    Q_ac = 3.0 * adc_read.vdc * (pv.q * pi.d - pv.d * pi.q); // 1.5 * (vq id - vd iq);
+
+
     // Torque estimation
     torque_est = (1.0 - ft) * torque_est_1 + ft * FLUX_M * pi.q;
     torque_est_1 = torque_est;
@@ -618,8 +641,8 @@ interrupt void adc_isr() {
                 temp1 = modul * __cos(wrotor * k); // TMU instructions
 
 
-                svgn.Ualpha = temp1;
-                svgn.Ubeta = temp;
+                svgn.Ualpha = temp;
+                svgn.Ubeta = temp1;
 
                 svgen(&svgn);
 
@@ -681,7 +704,7 @@ interrupt void adc_isr() {
                 if (state_change_5sec > STATE_CHNAGE_5SEC) {
 
                     state_change_5sec = 0;
-//                    control_state_info = RUN;
+                    control_state_info = RUN;
 
                 }
 
@@ -705,7 +728,10 @@ interrupt void adc_isr() {
                 torquePID.term.Fbk = smo_a.wo_k;
 
                 torquePID.param.Kp = KpoS;
-                torquePID.param.Ki = KioS * DELTA_T;
+                torquePID.param.Ki = KioS * DELTA_VDC_T;
+
+                torquePID.param.Umax =  IDC_MAX;
+                torquePID.param.Umin = -IDC_MAX;
 
                 PID_GRANDO_F_FUNC(&torquePID);
 
@@ -725,16 +751,16 @@ interrupt void adc_isr() {
 #if 1
             idPID.term.Ref = 0.0;
             idPID.term.Fbk = pi.d;
-            idPID.param.Umax = 0.95 * adc_read.vdc;
-            idPID.param.Umin = -0.95 * adc_read.vdc;
+            idPID.param.Umax = 0.45 * adc_read.vdc;
+            idPID.param.Umin = -0.45 * adc_read.vdc;
             idPID.param.Kp = KpoD;
             idPID.param.Ki = KioD * DELTA_T;
             PID_GRANDO_F_FUNC(&idPID);
 
             iqPID.term.Ref = torquePID.term.Out;
             iqPID.term.Fbk = pi.q;
-            iqPID.param.Umax = 0.95 * adc_read.vdc;
-            iqPID.param.Umin = -0.95 * adc_read.vdc;
+            iqPID.param.Umax = 0.45 * adc_read.vdc;
+            iqPID.param.Umin = -0.45 * adc_read.vdc;
             iqPID.param.Kp = KpoQ;
             iqPID.param.Ki = KioQ * DELTA_T; //
             PID_GRANDO_F_FUNC(&iqPID);
@@ -781,8 +807,8 @@ interrupt void adc_isr() {
 
             // SVM control signal
 
-            svgn.Ualpha = ipv.alpha / adc_read.vdc;
-            svgn.Ubeta = ipv.beta / adc_read.vdc;
+            svgn.Ualpha = 2.0 * ipv.alpha / adc_read.vdc;
+            svgn.Ubeta = 2.0 * ipv.beta / adc_read.vdc;
 
             svgen(&svgn);
 
