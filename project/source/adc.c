@@ -714,6 +714,8 @@ interrupt void adc_isr() {
         // Run closed loop
         case RUN:
 
+            // DPJ 15/02/2021: Clean up rhe code
+
             // Speed control
             state_change_5sec++;
             state_change_5sec%=VDC_CTRL;
