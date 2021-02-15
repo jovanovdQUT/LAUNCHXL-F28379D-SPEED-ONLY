@@ -55,7 +55,21 @@ float IQ_REF = 0.5;
 
 float KpoD = 0.540000021,   KioD = 593.0;
 float KpoQ = 0.540000021,   KioQ = 593.0;
-float KpoS = 2.0844e-4, KioS = 0.03365;
+
+// Case 1 - OK
+//float KpoS = 0.013315, KioS = 0.18964;
+
+// Case 2 - Good disturbance rejection
+//float KpoS = 0.04846, KioS = 3.7892;
+
+// Case 3 - Same as Case 2
+//float KpoS = 0.044796, KioS = 2.0262;
+
+// Case 4
+//float KpoS = 0.050556, KioS = 0.07358;
+
+// Case 5
+float KpoS = 0.013315, KioS = 0.18964;
 
 //float KpoD = 5.0, KioD = 0.1;
 //float KpoQ = 5.0, KioQ = 0.1;
@@ -573,7 +587,7 @@ interrupt void adc_isr() {
         case CALIBRA:
 
             // Go directly to torque control
-            control_state_info = SYNCHRO; //RUN; //
+            control_state_info = SYNCHRO; // RUN; //
 
         break;
 
@@ -593,35 +607,35 @@ interrupt void adc_isr() {
 
 
 
-                j++;
-                j%=(int)100000;
-
-                if (j == 0) {
-
-                    switch (state) {
-
-                    case 0:
-                        modul = 0.2;
-                        state = 1;
-                        break;
-
-                    case 1:
-                        modul = 0.2;
-                        state = 2;
-                        break;
-
-                    case 2:
-                        modul = 0.2;
-                        state = 3;
-                        break;
-
-                    case 3:
-                        modul = 0.2;
-                        state = 0;
-                        break;
-                    }
-
-                }
+//                j++;
+//                j%=(int)100000;
+//
+//                if (j == 0) {
+//
+//                    switch (state) {
+//
+//                    case 0:
+//                        modul = 0.2;
+//                        state = 1;
+//                        break;
+//
+//                    case 1:
+//                        modul = 0.2;
+//                        state = 2;
+//                        break;
+//
+//                    case 2:
+//                        modul = 0.2;
+//                        state = 3;
+//                        break;
+//
+//                    case 3:
+//                        modul = 0.2;
+//                        state = 0;
+//                        break;
+//                    }
+//
+//                }
 
                 temp  = modul * __sin(wrotor * k); // TMU instructions
                 temp1 = modul * __cos(wrotor * k); // TMU instructions
@@ -632,9 +646,9 @@ interrupt void adc_isr() {
 
                 svgen(&svgn);
 
-                EPwm1Regs.CMPA.bit.CMPA = (Uint16) ((float) (PWM_PERIOD) * ( 0.5 * ( svgn.Tc + 1.0))) + 1;
-                EPwm2Regs.CMPA.bit.CMPA = (Uint16) ((float) (PWM_PERIOD) * ( 0.5 * ( svgn.Tb + 1.0))) + 1;
-                EPwm3Regs.CMPA.bit.CMPA = (Uint16) ((float) (PWM_PERIOD) * ( 0.5 * ( svgn.Ta + 1.0))) + 1;
+                EPwm1Regs.CMPA.bit.CMPA = (Uint16) ((float) (PWM_PERIOD) * ( 0.5  * ( 1  * svgn.Tc + 1.0))) + 1;
+                EPwm2Regs.CMPA.bit.CMPA = (Uint16) ((float) (PWM_PERIOD) * ( 0.5  * ( 1  * svgn.Tb + 1.0))) + 1;
+                EPwm3Regs.CMPA.bit.CMPA = (Uint16) ((float) (PWM_PERIOD) * ( 0.5  * ( 1  * svgn.Ta + 1.0))) + 1;
 
                 // Debugging
 //                tempTheta = PI_INV * smopos.Theta;
@@ -716,6 +730,9 @@ interrupt void adc_isr() {
                 torquePID.param.Kp = KpoS;
                 torquePID.param.Ki = KioS * DELTA_VDC_T;
 
+                torquePID.param.Umax =  IDC_MAX;
+                torquePID.param.Umin = -IDC_MAX;
+
                 PID_GRANDO_F_FUNC(&torquePID);
 
 #else
@@ -734,16 +751,16 @@ interrupt void adc_isr() {
 #if 1
             idPID.term.Ref = 0.0;
             idPID.term.Fbk = pi.d;
-            idPID.param.Umax = 0.95 * adc_read.vdc;
-            idPID.param.Umin = -0.95 * adc_read.vdc;
+            idPID.param.Umax = 0.45 * adc_read.vdc;
+            idPID.param.Umin = -0.45 * adc_read.vdc;
             idPID.param.Kp = KpoD;
             idPID.param.Ki = KioD * DELTA_T;
             PID_GRANDO_F_FUNC(&idPID);
 
             iqPID.term.Ref = torquePID.term.Out;
             iqPID.term.Fbk = pi.q;
-            iqPID.param.Umax = 0.95 * adc_read.vdc;
-            iqPID.param.Umin = -0.95 * adc_read.vdc;
+            iqPID.param.Umax = 0.45 * adc_read.vdc;
+            iqPID.param.Umin = -0.45 * adc_read.vdc;
             iqPID.param.Kp = KpoQ;
             iqPID.param.Ki = KioQ * DELTA_T; //
             PID_GRANDO_F_FUNC(&iqPID);
@@ -790,8 +807,8 @@ interrupt void adc_isr() {
 
             // SVM control signal
 
-            svgn.Ualpha = ipv.alpha / adc_read.vdc;
-            svgn.Ubeta = ipv.beta / adc_read.vdc;
+            svgn.Ualpha = 2.0 * ipv.alpha / adc_read.vdc;
+            svgn.Ubeta = 2.0 * ipv.beta / adc_read.vdc;
 
             svgen(&svgn);
 

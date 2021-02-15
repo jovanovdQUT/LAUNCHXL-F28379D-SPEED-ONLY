@@ -49,7 +49,7 @@ resonant_t smo_a={0}, smo_b={0};
 
 Uint32 state_change_5sec = 0, vdc_ctrl_cnt = 0;
 
-float wRefRPM = 40.0 * TWO_PI;;
+float wRefRPM = 80.0 * TWO_PI;;
 float tempConst = 0.0;
 
 

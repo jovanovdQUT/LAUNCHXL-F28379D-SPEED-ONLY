@@ -93,7 +93,7 @@
 #define VDC_MAX             (35.0)
 #define VOLT_SCALE          ((1.0)/(VDC_MAX))
 
-#define IDC_MAX             (1.0)
+#define IDC_MAX             (1.5)
 
 #define TRIGSEL_PWM1_SOC    (0x05)
 #define TRIGSEL_PWM2_SOC    (0x07)
