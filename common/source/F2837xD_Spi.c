@@ -186,7 +186,7 @@ interrupt void spia_rx_isr(void) {
 
     Uint16 i;
 
-    GPIO_WritePin(TEST_PIN, 1);
+//    GPIO_WritePin(TEST_PIN, 1);
 
 
 
@@ -195,7 +195,7 @@ interrupt void spia_rx_isr(void) {
         rdata[i] = SpiaRegs.SPIRXBUF;     // Read data
     }
 
-    GPIO_WritePin(TEST_PIN, 0);
+//    GPIO_WritePin(TEST_PIN, 0);
 
     SpiaRegs.SPIFFRX.bit.RXFFOVFCLR = 1;  // Clear Overflow flag
 

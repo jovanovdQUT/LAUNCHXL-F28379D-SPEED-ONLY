@@ -70,7 +70,7 @@
 
 #define PWM_CLOCK_FREQ      ((CPU_CLOCK_FREQ)/(2.0))          // Feature of the chip, section 15.4.1 or page 1871 of technical manual SPRUHM8I–December 2013–Revised September 2019
 
-#define ISR_FREQUENCY       (20.0e3)
+#define ISR_FREQUENCY       (50.0e3)
 
 #define DELTA_T             (((1.0)/(ISR_FREQUENCY)))       // Switching frequency Fsw = 20kHz (0.00005s) Fsw = 10kHz (0.0001s) Fsw = 5kHz (0.0002s)
 

@@ -587,7 +587,7 @@ interrupt void adc_isr() {
         case CALIBRA:
 
             // Go directly to torque control
-            control_state_info = SYNCHRO; // RUN; //
+            control_state_info =  SYNCHRO; //RUN; //// amir
 
         break;
 
@@ -637,8 +637,8 @@ interrupt void adc_isr() {
 //
 //                }
 
-                temp  = modul * __sin(wrotor * k); // TMU instructions
-                temp1 = modul * __cos(wrotor * k); // TMU instructions
+                temp1  = modul * __sin(wrotor * k); // TMU instructions //amir
+                temp = modul * __cos(wrotor * k); // TMU instructions //amir
 
 
                 svgn.Ualpha = temp;
@@ -722,9 +722,12 @@ interrupt void adc_isr() {
 
             if (state_change_5sec == 0) {
 
+//            state_change_5sec++;
+//            state_change_5sec%=VDC_CTRL; // amir
+
 #if 1
                 ramp_k = 0.99 * ramp_k_1 + 0.01 * wRefRPM;
-                torquePID.term.Ref =  wRefRPM; //ramp_k;
+                torquePID.term.Ref = wRefRPM; //  ramp_k; //amir
                 ramp_k_1 = ramp_k;
 
                 torquePID.term.Fbk = smo_a.wo_k;
